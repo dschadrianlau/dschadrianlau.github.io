@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>DSCIS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" type="https://github.com/dschadrianlau/dschadrianlau.github.io/blob/913d591237012d10f146f36b68396777c9c461f1/image/whitedsc.png">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+</head>
+<style>
+    body{
+        overflow: hidden;
+        background-color: #20c920;
+        transform: scale(2.5);
+    }
+    h3{
+        font-family: "JetBrains Mono", monospace;
+        color: #fff;
+    }
+    button{
+        align-items: center;
+        appearance: none;
+        background-image: radial-gradient(100% 100% at 100% 0,#83fc83 0,#168c16 100%);
+        border: 0;
+        border-radius: 6px;
+        box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,rgba(58, 65, 111, 0.5) 0 -3px 0 inset;
+        box-sizing: border-box;
+        color: #fff;
+        cursor: pointer;
+        display: inline-flex;
+        font-family: "JetBrains Mono", monospace;
+        height: 48px;
+        justify-content: center;
+        line-height: 1;
+        list-style: none;
+        overflow: hidden;
+        padding-left: 16px;
+        padding-right: 16px;
+        position: relative;
+        text-align: left;
+        text-decoration: none;
+        transition: box-shadow 0.15s, transform 0.15s;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        white-space: nowrap;
+        will-change: box-shadow, transform;
+        font-size: 18px;
+    }
+    button:hover{
+        box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
+            rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #326e4c 0 -3px 0 inset;
+        transform: translateY(-2px);
+    }
+    button:active{
+        box-shadow: #326e4c 0 3px 7px inset;
+        transform: translateY(2px);
+    }
+</style>
+<body>
+    <main>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <center>
+            <h3>English drama sound effect</h3>
+            <button onclick="playsnd('E1F5.mp3')">STRT</button>
+            <button onclick="playsnd('E2F2.mp3')">MIDN</button>
+            <button onclick="playsnd('E3F10.mp3')">HRTB</button>
+            <button onclick="playsnd('E4F2.mp3')">AHHH</button>
+            <br>
+            <br>
+            <button onclick="playsnd('E5F1.mp3')">CUTN</button>
+            <button onclick="playsnd('E6F2.mp3')">KNOK</button>
+            <button onclick="playsnd('E7F10.mp3')">HRTB</button>
+        </center>
+    </main>
+    <script>
+        function playsnd(soundfile){
+            var audio = new Audio(soundfile);
+            audio.play();
+        }
+    </script>
+</body>
+</html>
